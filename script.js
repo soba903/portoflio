@@ -1,8 +1,4 @@
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-// --------------------------------------------------------------------------
-// Mobile nav toggle
-// --------------------------------------------------------------------------
 function initNavToggle() {
   const toggle = document.getElementById("navToggle");
   const links = document.getElementById("navLinks");
@@ -21,9 +17,6 @@ function initNavToggle() {
   });
 }
 
-// --------------------------------------------------------------------------
-// Portfolio tabs (Projects / Certificates / Tech Stack)
-// --------------------------------------------------------------------------
 function initTabs() {
   const buttons = document.querySelectorAll(".tab-btn");
   const panels = document.querySelectorAll(".tab-panel");
@@ -39,9 +32,6 @@ function initTabs() {
   });
 }
 
-// --------------------------------------------------------------------------
-// Stat count-up: runs once, when the stats row scrolls into view
-// --------------------------------------------------------------------------
 function initStatCountUp() {
   const numbers = document.querySelectorAll(".stat-number");
   if (!numbers.length) return;
@@ -79,9 +69,6 @@ function initStatCountUp() {
   observer.observe(document.querySelector(".stats"));
 }
 
-// --------------------------------------------------------------------------
-// Copy email to clipboard
-// --------------------------------------------------------------------------
 function initCopyEmail() {
   const button = document.getElementById("copyEmail");
   const emailLink = document.getElementById("emailLink");
@@ -99,9 +86,6 @@ function initCopyEmail() {
   });
 }
 
-// --------------------------------------------------------------------------
-// Highlight active nav link based on scroll position
-// --------------------------------------------------------------------------
 function initActiveNav() {
   const sections = document.querySelectorAll("section[id], header[id]");
   const navLinks = document.querySelectorAll(".nav-links a");
@@ -123,9 +107,6 @@ function initActiveNav() {
   sections.forEach((section) => observer.observe(section));
 }
 
-// --------------------------------------------------------------------------
-// Init
-// --------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();

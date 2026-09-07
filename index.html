@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yousab Ehab Raouf — Web Developer</title>
+<meta name="description" content="Portfolio of Yousab Ehab Raouf, a first-year high school student learning web development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <nav class="nav">
+    <span class="nav-logo">Yousab<span class="dot">.</span></span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1>Yousab Ehab Raouf</h1>
+      <p class="hero-bio">
+        A first-year high school student in Egypt, learning to build for the web.
+        I focus on front-end development — turning HTML, CSS, and JavaScript
+        into things people can actually use.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Contact me</a>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <div class="avatar-ring">
+        <img src="profile.jpg" alt="Yousab Ehab Raouf" class="avatar-circle">
+      </div>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div class="stat-card">
+      <span class="stat-number" data-target="3">0</span>
+      <p>Projects built</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number" data-target="3">0</span>
+      <p>Languages learning</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number" data-target="1">0</span>
+      <p>Year in high school</p>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="glass-card about-card">
+      <h2 class="section-title">About me</h2>
+      <p>
+        I'm Yousab, 15 years old and in my first year of secondary school. I started
+        teaching myself web development because I like the idea that a few lines of
+        text can turn into something people can actually click, scroll, and use.
+      </p>
+      <p>
+        I'm early in the journey — focused on getting comfortable with HTML, CSS, and
+        JavaScript by building small projects, breaking them, and figuring out why.
+        I'm looking for opportunities to learn from real teams and keep improving.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2 class="section-title center">Portfolio Showcase</h2>
+    <p class="section-note center">Projects, tech stack, and everything I'm building toward.</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="projects">Projects</button>
+      <button class="tab-btn" data-tab="certificates">Certificates</button>
+      <button class="tab-btn" data-tab="techstack">Tech Stack</button>
+    </div>
+
+    <div class="tab-panel active" id="projects">
+      <div class="project-grid">
+
+        <article class="glass-card project-card">
+          <h3>Al-Amal — Medical &amp; Cosmetics Store</h3>
+          <p>A storefront landing page for a medical supplies and cosmetics business — product categories, a "why choose us" section, and direct WhatsApp/phone contact for orders.</p>
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://soba903.github.io/al-amal/" target="_blank" rel="noopener" class="link-btn">Live demo</a>
+            <a href="https://github.com/soba903/al-amal" target="_blank" rel="noopener" class="link-btn ghost">Code</a>
+          </div>
+        </article>
+
+        <article class="glass-card project-card">
+          <h3>This Portfolio</h3>
+          <p>The site you're looking at right now — a glassmorphism-themed personal portfolio built to showcase my projects and skills.</p>
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-btn">Live demo</a>
+            <a href="https://github.com/soba903" target="_blank" rel="noopener" class="link-btn ghost">Code</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="section-note small">More projects coming soon as I keep building.</p>
+    </div>
+
+    <div class="tab-panel" id="certificates">
+      <div class="glass-card cert-card">
+        <span class="cert-icon">🎓</span>
+        <div>
+          <h3>English Language Course</h3>
+          <p>Modern Language Institute (MODLI) — Armed Forces Language Institute, Egypt.</p>
+        </div>
+      </div>
+      <div class="glass-card cert-card">
+        <span class="cert-icon">💻</span>
+        <div>
+          <h3>iSchool Courses</h3>
+          <p>iSchool — the leading online coding and AI learning platform in the MENA region.</p>
+        </div>
+      </div>
+      <p class="section-note small">More courses and certificates coming soon as I keep learning.</p>
+    </div>
+
+    <div class="tab-panel" id="techstack">
+      <div class="glass-card">
+        <ul class="stack-grid">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="glass-card contact-card">
+      <h2 class="section-title">Let's talk</h2>
+      <p class="section-note">Open to internships, small tasks, or just advice from people who've been there.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="key">Email</span>
+          <a href="mailto:yousabehab9149ir@gmail.com" id="emailLink">yousabehab9149ir@gmail.com</a>
+          <button class="copy-btn" id="copyEmail" type="button">Copy</button>
+        </li>
+        <li>
+          <span class="key">Phone</span>
+          <a href="tel:+201278413553">+20 127 841 3553</a>
+        </li>
+        <li>
+          <span class="key">GitHub</span>
+          <a href="https://github.com/soba903" target="_blank" rel="noopener">github.com/soba903</a>
+        </li>
+        <li>
+          <span class="key">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/yousab-ehab" target="_blank" rel="noopener">linkedin.com/in/yousab-ehab</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Yousab Ehab Raouf. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
